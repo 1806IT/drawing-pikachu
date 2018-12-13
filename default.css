@@ -54,3 +54,16 @@ div.actions>.btn.active{
     flex: 1;
     height: 50%;
 }
+img{
+    display:none;
+    
+}
+.shock-left{
+    right: 50%;
+    margin-right: 116px;
+    transform: rotate(135deg);
+}
+.shock-right{
+    left: 50%;
+    margin-left: 116px;
+}

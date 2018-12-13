@@ -19,6 +19,9 @@
         },speed)
     }
     let code=`
+    /*今天准备画一只皮卡丘
+     首先先画出皮卡丘的皮
+    */
     .preview{
     height: 100%;
     /*    border: 1px solid green;*/
@@ -34,6 +37,7 @@
     background: #fce54b;
     position: relative;
 }
+/*然后在画皮卡丘的鼻子*/
 .nose{
     width: 0px;
     height: 0px;
@@ -50,6 +54,7 @@
     border-color: black transparent transparent transparent;
     z-index:1;
 }
+/*接下来画皮卡丘眼睛*/
 .eye{
     width: 49px;
     height: 49px;
@@ -58,6 +63,8 @@
     position: absolute;
     border: 2px solid #000000;
 }
+/*眼睛里面的珠子*/
+
 .eye::before{
     content:'';
     display:block;
@@ -70,14 +77,17 @@
     top: -1px;
     border: 2px solid #000000;
 }
+/*右眼在右边（废话）*/
 .eye.right{
     left:50%;
     margin-left: 90px;
 }
+/*左眼在左边（废话连篇）*/
 .eye.left{
     right:50%;
     margin-right: 90px;
 }
+/*然后再画皮卡丘的脸*/
 .face{
     width: 68px;
     height: 68px;
@@ -87,6 +97,7 @@
     position: absolute;
     top: 85px;
 }
+/*脸颊要在正确的位置*/
 .face.left{
     right:50%;
     margin-right: 116px
@@ -95,6 +106,9 @@
     left:50%;
     margin-left: 116px
 }
+
+/*  上嘴唇  */
+
 .upperLip{
     height: 25px;
     width: 70px;
@@ -111,7 +125,6 @@
     border-right: none;
     transform: rotate(-20deg);
     right: 50%;
-
 }
 .upperLip.right{
     border-bottom-right-radius: 40px 25px;
@@ -121,6 +134,7 @@
     left: 50%;
 
 }
+/*卡卡的小舌头 */
 .lowerLip-wrapper{
     position: absolute;
     left: 50%;
@@ -153,6 +167,15 @@
     margin-left: -50px;
     border-radius: 50%;
 }
+/*皮卡丘的10万伏特*/
+img{
+    
+    position: absolute;
+    bottom:10%;
+    display:block;
+}
+
+/*好了，可爱的皮卡丘可以送给你了*/
     `
     writeCode('',code);
 
